@@ -1,0 +1,1689 @@
+2024-06-21 22:09:07 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $model in C:\xampp\htdocs\projetoCezar\vendor\hail812\yii2-adminlte3\src\views\site\login.php:10
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\hail812\yii2-adminlte3\src\views\site\login.php(10): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 10)
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('login', Array, Object(app\controllers\SiteController))
+#5 C:\xampp\htdocs\projetoCezar\controllers\SiteController.php(74): yii\base\Controller->render('login')
+#6 [internal function]: app\controllers\SiteController->actionLogin()
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#10 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#11 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\projetoCezar\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2024-06-21 22:09:07 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36\";}'
+    'sidebar-collapse' => 'true'
+    'dark-mode' => 'false'
+    '_csrf' => '0b943641e3ee609db0ec40b9641cc63579ab81adf9247578707a905358b9cf85a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AWzFNTnVyLr5eITKE9TMLEuOGXVWQfmu\";}'
+    'userLoggedIn' => '59c7e4e9be2466de63eb7def6bb67b5771140019eef2dfb7d3038c7d78e56f43a:2:{i:0;s:12:\"userLoggedIn\";i:1;s:4:\"true\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55673'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/login'
+    'PHP_SELF' => '/index.php/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-backend=f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36%22%3B%7D; sidebar-collapse=true; dark-mode=false; _csrf=0b943641e3ee609db0ec40b9641cc63579ab81adf9247578707a905358b9cf85a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AWzFNTnVyLr5eITKE9TMLEuOGXVWQfmu%22%3B%7D; userLoggedIn=59c7e4e9be2466de63eb7def6bb67b5771140019eef2dfb7d3038c7d78e56f43a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22userLoggedIn%22%3Bi%3A1%3Bs%3A4%3A%22true%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719000547.4374
+    'REQUEST_TIME' => 1719000547
+]
+2024-06-21 22:15:01 [::1][100][2ro9ttnf24brn8s1vmmjb4ike5][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Controller.php(215): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('logout', Array)
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/logout', Array)
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\projetoCezar\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2024-06-21 22:15:01 [::1][100][2ro9ttnf24brn8s1vmmjb4ike5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36\";}'
+    'sidebar-collapse' => 'true'
+    'dark-mode' => 'false'
+    'userLoggedIn' => '59c7e4e9be2466de63eb7def6bb67b5771140019eef2dfb7d3038c7d78e56f43a:2:{i:0;s:12:\"userLoggedIn\";i:1;s:4:\"true\";}'
+    'PHPSESSID' => '2ro9ttnf24brn8s1vmmjb4ike5'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'f041c185e1eec7067273244df8d6d6da12b3c26048e7f452505186a44cc4e197a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4v6GAAAl1GTpksRI1WpYcVepQcswaNik\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55804'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/logout'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/logout'
+    'PHP_SELF' => '/index.php/logout'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-backend=f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36%22%3B%7D; sidebar-collapse=true; dark-mode=false; userLoggedIn=59c7e4e9be2466de63eb7def6bb67b5771140019eef2dfb7d3038c7d78e56f43a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22userLoggedIn%22%3Bi%3A1%3Bs%3A4%3A%22true%22%3B%7D; PHPSESSID=2ro9ttnf24brn8s1vmmjb4ike5; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=f041c185e1eec7067273244df8d6d6da12b3c26048e7f452505186a44cc4e197a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224v6GAAAl1GTpksRI1WpYcVepQcswaNik%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719000901.779
+    'REQUEST_TIME' => 1719000901
+]
+2024-06-21 22:24:08 [::1][100][2d98lrtso9l7him9pusmd0at28][error][yii\di\NotInstantiableException] ReflectionException: Class "/" does not exist in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\Container.php:507
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\Container.php(507): ReflectionClass->__construct('/')
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('/')
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('/', Array, Array)
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\BaseYii.php(345): yii\di\Container->get('/', Array)
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject('/')
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(766): yii\di\ServiceLocator->get('homeUrl', true)
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\ServiceLocator.php(74): yii\base\Module->get('homeUrl')
+#7 C:\xampp\htdocs\projetoCezar\vendor\hail812\yii2-adminlte3\src\views\layouts\main-login.php(27): yii\di\ServiceLocator->__get('homeUrl')
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent('<div class="con...')
+#12 C:\xampp\htdocs\projetoCezar\controllers\SiteController.php(67): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\projetoCezar\web\index.php(12): yii\base\Application->run()
+#20 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "/". in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\Container.php:509
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('/')
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('/', Array, Array)
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\BaseYii.php(345): yii\di\Container->get('/', Array)
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject('/')
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(766): yii\di\ServiceLocator->get('homeUrl', true)
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\ServiceLocator.php(74): yii\base\Module->get('homeUrl')
+#6 C:\xampp\htdocs\projetoCezar\vendor\hail812\yii2-adminlte3\src\views\layouts\main-login.php(27): yii\di\ServiceLocator->__get('homeUrl')
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#9 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#10 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent('<div class="con...')
+#11 C:\xampp\htdocs\projetoCezar\controllers\SiteController.php(67): yii\base\Controller->render('index')
+#12 [internal function]: app\controllers\SiteController->actionIndex()
+#13 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#17 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 C:\xampp\htdocs\projetoCezar\web\index.php(12): yii\base\Application->run()
+#19 {main}
+2024-06-21 22:24:08 [::1][100][2d98lrtso9l7him9pusmd0at28][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36\";}'
+    'sidebar-collapse' => 'true'
+    'dark-mode' => 'false'
+    'userLoggedIn' => '59c7e4e9be2466de63eb7def6bb67b5771140019eef2dfb7d3038c7d78e56f43a:2:{i:0;s:12:\"userLoggedIn\";i:1;s:4:\"true\";}'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '2d98lrtso9l7him9pusmd0at28'
+    '_csrf' => 'b99baf0d4cf26bb6392ecec04304cd688f3c0a6f062bdfd2d19814effc5325bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YlndQw_r3B5oyeDGommeR0mrdqSGqksx\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56007'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_REFERER' => 'http://localhost:8080/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-backend=f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36%22%3B%7D; sidebar-collapse=true; dark-mode=false; userLoggedIn=59c7e4e9be2466de63eb7def6bb67b5771140019eef2dfb7d3038c7d78e56f43a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22userLoggedIn%22%3Bi%3A1%3Bs%3A4%3A%22true%22%3B%7D; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=2d98lrtso9l7him9pusmd0at28; _csrf=b99baf0d4cf26bb6392ecec04304cd688f3c0a6f062bdfd2d19814effc5325bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YlndQw_r3B5oyeDGommeR0mrdqSGqksx%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719001448.1254
+    'REQUEST_TIME' => 1719001448
+]
+2024-06-21 22:31:49 [::1][-][t7q4laka55tjo97lhbq5rea9mo][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\web\Cookie::duration in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\BaseObject.php:163
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\BaseYii.php(557): yii\base\BaseObject->__set('duration', 604800)
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\web\Cookie), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\web\\Cookie', Array, Array)
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\web\\Cookie', Array, Array)
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\User.php(554): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\User.php(730): yii\web\User->renewIdentityCookie()
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#9 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#10 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#11 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#12 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#13 [internal function]: yii\base\BaseObject->__construct(Array)
+#14 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#15 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#16 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#17 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject(Array)
+#18 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#19 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#20 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#21 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#22 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#23 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#24 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#25 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#26 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#27 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#28 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#29 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#30 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#31 C:\xampp\htdocs\projetoCezar\web\index.php(12): yii\base\Application->__construct(Array)
+#32 {main}
+2024-06-21 22:31:49 [::1][-][t7q4laka55tjo97lhbq5rea9mo][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36\";}'
+    'sidebar-collapse' => 'true'
+    'dark-mode' => 'false'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 't7q4laka55tjo97lhbq5rea9mo'
+    '_csrf' => '48139cac55c149a5a32109e0d61fa2b8f793d0db976f987d6c82ba984012d756a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oflizAP8tf2EFDsYzFEHlHsGvrTTZJ4s\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719003709
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56212'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/login'
+    'PHP_SELF' => '/index.php/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-backend=f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36%22%3B%7D; sidebar-collapse=true; dark-mode=false; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=t7q4laka55tjo97lhbq5rea9mo; _csrf=48139cac55c149a5a32109e0d61fa2b8f793d0db976f987d6c82ba984012d756a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oflizAP8tf2EFDsYzFEHlHsGvrTTZJ4s%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719001909.3243
+    'REQUEST_TIME' => 1719001909
+]
+2024-06-21 22:36:36 [::1][-][-][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\projetoCezar\views\site\main-login.php in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php:234
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('main-login', Array, Object(app\controllers\SiteController))
+#2 C:\xampp\htdocs\projetoCezar\controllers\SiteController.php(105): yii\base\Controller->render('main-login')
+#3 [internal function]: app\controllers\SiteController->actionLogout()
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('logout', Array)
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/logout', Array)
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\projetoCezar\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2024-06-21 22:36:36 [::1][-][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'tJBwEJTBHMULbsQgjJMDydtQlHa_PBDh3qZHAoJfu3vb9hx57oBM_X8I9mXK13CQoRbRPtN0Y6ao1BNW2BWPCA=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36\";}'
+    'sidebar-collapse' => 'true'
+    'dark-mode' => 'false'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 't7q4laka55tjo97lhbq5rea9mo'
+    '_csrf' => '48139cac55c149a5a32109e0d61fa2b8f793d0db976f987d6c82ba984012d756a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oflizAP8tf2EFDsYzFEHlHsGvrTTZJ4s\";}'
+]
+
+$_SESSION = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56360'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/logout'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/logout'
+    'PHP_SELF' => '/index.php/logout'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '98'
+    'HTTP_CONTENT_LENGTH' => '98'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-backend=f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36%22%3B%7D; sidebar-collapse=true; dark-mode=false; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=t7q4laka55tjo97lhbq5rea9mo; _csrf=48139cac55c149a5a32109e0d61fa2b8f793d0db976f987d6c82ba984012d756a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oflizAP8tf2EFDsYzFEHlHsGvrTTZJ4s%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719002196.266
+    'REQUEST_TIME' => 1719002196
+]
+2024-06-21 22:40:00 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $model in C:\xampp\htdocs\projetoCezar\vendor\hail812\yii2-adminlte3\src\views\site\login.php:10
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\hail812\yii2-adminlte3\src\views\site\login.php(10): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 10)
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('login', Array, Object(app\controllers\SiteController))
+#5 C:\xampp\htdocs\projetoCezar\controllers\SiteController.php(109): yii\base\Controller->render('login')
+#6 [internal function]: app\controllers\SiteController->actionLogout()
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('logout', Array)
+#10 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/logout', Array)
+#11 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\projetoCezar\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2024-06-21 22:40:00 [::1][-][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'TtDZsrPQUf25sfpLkNpVWVRp8KAEMWTi5v7OzgwPKscdgvT7i75otIDCnD7092ItHD6F4jB5C4igzKuWeFBThA=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36\";}'
+    'sidebar-collapse' => 'true'
+    'dark-mode' => 'false'
+    'PHPSESSID' => 'ckmaokfg4r79efsqeirjb7r7ss'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '548a8302a64d824649cd98fba8a24312f706ffab05fffaf8bacc6b9eb49629d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SR-I8n9I9sfud-7tHWuB4HojF2eXt_yC\";}'
+]
+
+$_SESSION = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56553'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/logout'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/logout'
+    'PHP_SELF' => '/index.php/logout'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '98'
+    'HTTP_CONTENT_LENGTH' => '98'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-backend=f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36%22%3B%7D; sidebar-collapse=true; dark-mode=false; PHPSESSID=ckmaokfg4r79efsqeirjb7r7ss; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=548a8302a64d824649cd98fba8a24312f706ffab05fffaf8bacc6b9eb49629d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SR-I8n9I9sfud-7tHWuB4HojF2eXt_yC%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719002400.7638
+    'REQUEST_TIME' => 1719002400
+]
+2024-06-21 22:40:36 [::1][100][kh3a23qj34tq72ap45q8p0tv2v][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $model in C:\xampp\htdocs\projetoCezar\vendor\hail812\yii2-adminlte3\src\views\site\login.php:10
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\hail812\yii2-adminlte3\src\views\site\login.php(10): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 10)
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('login', Array, Object(app\controllers\SiteController))
+#5 C:\xampp\htdocs\projetoCezar\controllers\SiteController.php(108): yii\base\Controller->render('login')
+#6 [internal function]: app\controllers\SiteController->actionLogout()
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('logout', Array)
+#10 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/logout', Array)
+#11 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\projetoCezar\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2024-06-21 22:40:36 [::1][100][kh3a23qj34tq72ap45q8p0tv2v][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'IjO_jDBb7BPKUy4zDg3UBrsPHQiZyteMbXzsfRZeRZJ1Q-zlZW2rYp45RWtsdLE0yj9rZd-yv_tdT7wuIwRxwQ=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36\";}'
+    'sidebar-collapse' => 'true'
+    'dark-mode' => 'false'
+    'PHPSESSID' => 'kh3a23qj34tq72ap45q8p0tv2v'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '0401f6e177d24dbf4c7cbc52081a8d1eccdbb69ac567c3262c2b534d7eab7bf9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WpSiU6GqTjkXbye2q0vmFxhw03PS5Z4S\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719004236
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56587'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/logout'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/logout'
+    'PHP_SELF' => '/index.php/logout'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '98'
+    'HTTP_CONTENT_LENGTH' => '98'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-backend=f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36%22%3B%7D; sidebar-collapse=true; dark-mode=false; PHPSESSID=kh3a23qj34tq72ap45q8p0tv2v; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=0401f6e177d24dbf4c7cbc52081a8d1eccdbb69ac567c3262c2b534d7eab7bf9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WpSiU6GqTjkXbye2q0vmFxhw03PS5Z4S%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719002436.4562
+    'REQUEST_TIME' => 1719002436
+]
+2024-06-21 22:41:43 [::1][100][kh3a23qj34tq72ap45q8p0tv2v][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Controller.php(215): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('logout', Array)
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/logout', Array)
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\projetoCezar\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2024-06-21 22:41:43 [::1][100][kh3a23qj34tq72ap45q8p0tv2v][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36\";}'
+    'sidebar-collapse' => 'true'
+    'dark-mode' => 'false'
+    'PHPSESSID' => 'kh3a23qj34tq72ap45q8p0tv2v'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '0401f6e177d24dbf4c7cbc52081a8d1eccdbb69ac567c3262c2b534d7eab7bf9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WpSiU6GqTjkXbye2q0vmFxhw03PS5Z4S\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719004303
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56592'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/logout'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/logout'
+    'PHP_SELF' => '/index.php/logout'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-backend=f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36%22%3B%7D; sidebar-collapse=true; dark-mode=false; PHPSESSID=kh3a23qj34tq72ap45q8p0tv2v; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=0401f6e177d24dbf4c7cbc52081a8d1eccdbb69ac567c3262c2b534d7eab7bf9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WpSiU6GqTjkXbye2q0vmFxhw03PS5Z4S%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719002503.9463
+    'REQUEST_TIME' => 1719002503
+]
+2024-06-21 22:42:12 [::1][100][2jggkdb9hgo80b64mckoug1em6][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Controller.php(215): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('logout', Array)
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/logout', Array)
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\projetoCezar\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2024-06-21 22:42:12 [::1][100][2jggkdb9hgo80b64mckoug1em6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36\";}'
+    'sidebar-collapse' => 'true'
+    'dark-mode' => 'false'
+    'PHPSESSID' => '2jggkdb9hgo80b64mckoug1em6'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'd18deae6af7b078440b24040a9060d84e38dbf6a463ec383be379c9aa5728962a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"BD8WQUSKGXHxP36Q0DLVaztYV-y1p_7K\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/logout'
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719004332
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56707'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/logout'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/logout'
+    'PHP_SELF' => '/index.php/logout'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_REFERER' => 'http://localhost:8080/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-backend=f47b7524d07108c2f21f16f1d6e2fef90c4f4334d908affdb1eb688bd4003b44a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22gsnzkMz4MQ_RaPMOxfFWZ30k8kAxeB36%22%3B%7D; sidebar-collapse=true; dark-mode=false; PHPSESSID=2jggkdb9hgo80b64mckoug1em6; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=d18deae6af7b078440b24040a9060d84e38dbf6a463ec383be379c9aa5728962a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22BD8WQUSKGXHxP36Q0DLVaztYV-y1p_7K%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719002532.8586
+    'REQUEST_TIME' => 1719002532
+]
+2024-06-21 23:32:10 [::1][-][tl31lta9i3buqddbvbavctvipo][error][Error] Error: Class "AdminLteAsset" not found in C:\xampp\htdocs\projetoCezar\views\layouts\main-login.php:17
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent('\n<div class="si...')
+#4 C:\xampp\htdocs\projetoCezar\controllers\SiteController.php(90): yii\base\Controller->render('login', Array)
+#5 [internal function]: app\controllers\SiteController->actionLogin()
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#9 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#10 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#12 {main}
+2024-06-21 23:32:10 [::1][-][tl31lta9i3buqddbvbavctvipo][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'sidebar-collapse' => 'true'
+    '_csrf' => 'a490533439cb3ea8d184bbae005dd29d726f3e9547fabe535fb4371ca8997dfea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EW46EFCZ5F1lCepnUfWwLXQk9csLZ8TM\";}'
+    'PHPSESSID' => 'tl31lta9i3buqddbvbavctvipo'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58344'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/login'
+    'PHP_SELF' => '/index.php/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'sidebar-collapse=true; _csrf=a490533439cb3ea8d184bbae005dd29d726f3e9547fabe535fb4371ca8997dfea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EW46EFCZ5F1lCepnUfWwLXQk9csLZ8TM%22%3B%7D; PHPSESSID=tl31lta9i3buqddbvbavctvipo'
+    'REQUEST_TIME_FLOAT' => 1719005530.6053
+    'REQUEST_TIME' => 1719005530
+]
+2024-06-21 23:36:48 [::1][100][eiq8vgk1du4gguf8pmqdo2l2ss][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\projetoCezar\views\layouts\header.php in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php:234
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#1 C:\xampp\htdocs\projetoCezar\views\layouts\main.php(30): yii\base\View->render('header.php')
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#6 C:\xampp\htdocs\projetoCezar\controllers\SiteController.php(71): yii\base\Controller->render('index')
+#7 [internal function]: app\controllers\SiteController->actionIndex()
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#12 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#14 {main}
+2024-06-21 23:36:47 [::1][100][eiq8vgk1du4gguf8pmqdo2l2ss][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'sidebar-collapse' => 'true'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'eiq8vgk1du4gguf8pmqdo2l2ss'
+    '_csrf' => 'ae30a150daee06305e10128456be4b09bb7944a7a1587e638f3bfbd7a8b5e7daa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RbQqmmpGWx4P6RXwRZIe6iIm_r9g0Cph\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719007607
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58463'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_REFERER' => 'http://localhost:8080/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'sidebar-collapse=true; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=eiq8vgk1du4gguf8pmqdo2l2ss; _csrf=ae30a150daee06305e10128456be4b09bb7944a7a1587e638f3bfbd7a8b5e7daa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RbQqmmpGWx4P6RXwRZIe6iIm_r9g0Cph%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719005807.9756
+    'REQUEST_TIME' => 1719005807
+]
+2024-06-21 23:42:00 [::1][100][c3mm7sedfg9tqkj25jkvb5hs24][error][yii\base\ErrorException:256] yii\base\ErrorException: Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\LoginForm::Usuário' 
+
+in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Component.php:154
+
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\helpers\BaseHtml.php(2291): yii\base\Component->__get('Usu\xC3\xA1rio')
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\helpers\BaseHtml.php(1383): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\LoginForm), 'Usu\xC3\xA1rio')
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\helpers\BaseHtml.php(1439): yii\helpers\BaseHtml::activeInput('text', Object(app\models\LoginForm), 'Usu\xC3\xA1rio', Array)
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\widgets\ActiveField.php(407): yii\helpers\BaseHtml::activeTextInput(Object(app\models\LoginForm), 'Usu\xC3\xA1rio', Array)
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\widgets\ActiveField.php(207): yii\widgets\ActiveField->textInput()
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\widgets\ActiveField.php(176): yii\widgets\ActiveField->render()
+#6 C:\xampp\htdocs\projetoCezar\views\site\login.php(17): yii\widgets\ActiveField->__toString()
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#9 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#10 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('login', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\projetoCezar\controllers\SiteController.php(90): yii\base\Controller->render('login', Array)
+#12 [internal function]: app\controllers\SiteController->actionLogin()
+#13 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#16 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#17 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#19 {main} in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\ErrorHandler.php:384
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception (Unkn...', 'C:\\xampp\\htdocs...', 384)
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\ErrorHandler.php(384): trigger_error('Exception (Unkn...', 256)
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\widgets\ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\xampp\htdocs\projetoCezar\views\site\login.php(17): yii\widgets\ActiveField->__toString()
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('login', Array, Object(app\controllers\SiteController))
+#8 C:\xampp\htdocs\projetoCezar\controllers\SiteController.php(90): yii\base\Controller->render('login', Array)
+#9 [internal function]: app\controllers\SiteController->actionLogin()
+#10 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#14 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#16 {main}
+2024-06-21 23:42:00 [::1][100][c3mm7sedfg9tqkj25jkvb5hs24][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'sidebar-collapse' => 'true'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'c3mm7sedfg9tqkj25jkvb5hs24'
+    '_csrf' => 'df552ede80a8f09dc68f14816515085faf31f4f63cd94e0f0e74069e25f843eea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UMXONhQoi0rhIZyNlszNEN2fU1arn2yU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719007920
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58682'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/login'
+    'PHP_SELF' => '/index.php/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'sidebar-collapse=true; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3mm7sedfg9tqkj25jkvb5hs24; _csrf=df552ede80a8f09dc68f14816515085faf31f4f63cd94e0f0e74069e25f843eea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UMXONhQoi0rhIZyNlszNEN2fU1arn2yU%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719006120.8581
+    'REQUEST_TIME' => 1719006120
+]
+2024-06-21 23:46:50 [::1][100][bog9k3acquqi6v30nlm712e7l6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/main in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('main', Array)
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/main', Array)
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#2 {main}
+2024-06-21 23:46:50 [::1][100][bog9k3acquqi6v30nlm712e7l6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'sidebar-collapse' => 'true'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'bog9k3acquqi6v30nlm712e7l6'
+    '_csrf' => '72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719008210
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58833'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/site/main'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/site/main'
+    'PHP_SELF' => '/index.php/site/main'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'sidebar-collapse=true; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=bog9k3acquqi6v30nlm712e7l6; _csrf=72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719006410.6435
+    'REQUEST_TIME' => 1719006410
+]
+2024-06-21 23:46:58 [::1][100][bog9k3acquqi6v30nlm712e7l6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/main in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('main', Array)
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/main', Array)
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#2 {main}
+2024-06-21 23:46:58 [::1][100][bog9k3acquqi6v30nlm712e7l6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'sidebar-collapse' => 'true'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'bog9k3acquqi6v30nlm712e7l6'
+    '_csrf' => '72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719008218
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58842'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/site/main'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/site/main'
+    'PHP_SELF' => '/index.php/site/main'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'sidebar-collapse=true; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=bog9k3acquqi6v30nlm712e7l6; _csrf=72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719006418.2201
+    'REQUEST_TIME' => 1719006418
+]
+2024-06-21 23:47:28 [::1][100][bog9k3acquqi6v30nlm712e7l6][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\filters\AccessControl.php:158
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\filters\AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Controller.php(215): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#9 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#11 {main}
+2024-06-21 23:47:28 [::1][100][bog9k3acquqi6v30nlm712e7l6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'sidebar-collapse' => 'true'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'bog9k3acquqi6v30nlm712e7l6'
+    '_csrf' => '72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719008248
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58941'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/login'
+    'PHP_SELF' => '/index.php/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'sidebar-collapse=true; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=bog9k3acquqi6v30nlm712e7l6; _csrf=72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719006448.3933
+    'REQUEST_TIME' => 1719006448
+]
+2024-06-21 23:47:32 [::1][100][bog9k3acquqi6v30nlm712e7l6][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\filters\AccessControl.php:158
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\filters\AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Controller.php(215): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#9 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#11 {main}
+2024-06-21 23:47:32 [::1][100][bog9k3acquqi6v30nlm712e7l6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'sidebar-collapse' => 'true'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'bog9k3acquqi6v30nlm712e7l6'
+    '_csrf' => '72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719008252
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58951'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/login'
+    'PHP_SELF' => '/index.php/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'sidebar-collapse=true; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=bog9k3acquqi6v30nlm712e7l6; _csrf=72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719006452.5157
+    'REQUEST_TIME' => 1719006452
+]
+2024-06-21 23:47:48 [::1][100][bog9k3acquqi6v30nlm712e7l6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/main in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('main', Array)
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/main', Array)
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#2 {main}
+2024-06-21 23:47:47 [::1][100][bog9k3acquqi6v30nlm712e7l6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'sidebar-collapse' => 'true'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'bog9k3acquqi6v30nlm712e7l6'
+    '_csrf' => '72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719008268
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58969'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/site/main'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/site/main'
+    'PHP_SELF' => '/index.php/site/main'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'sidebar-collapse=true; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=bog9k3acquqi6v30nlm712e7l6; _csrf=72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719006467.992
+    'REQUEST_TIME' => 1719006467
+]
+2024-06-21 23:48:51 [::1][100][bog9k3acquqi6v30nlm712e7l6][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\filters\AccessControl.php:158
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\filters\AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Controller.php(215): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#9 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#11 {main}
+2024-06-21 23:48:51 [::1][100][bog9k3acquqi6v30nlm712e7l6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'sidebar-collapse' => 'true'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'bog9k3acquqi6v30nlm712e7l6'
+    '_csrf' => '72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719008331
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58984'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/login'
+    'PHP_SELF' => '/index.php/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_SEC_PURPOSE' => 'prefetch;prerender'
+    'HTTP_PURPOSE' => 'prefetch'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'sidebar-collapse=true; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=bog9k3acquqi6v30nlm712e7l6; _csrf=72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719006531.8164
+    'REQUEST_TIME' => 1719006531
+]
+2024-06-21 23:48:53 [::1][100][bog9k3acquqi6v30nlm712e7l6][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\filters\AccessControl.php:158
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\filters\AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Controller.php(215): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#9 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#11 {main}
+2024-06-21 23:48:53 [::1][100][bog9k3acquqi6v30nlm712e7l6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'sidebar-collapse' => 'true'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'bog9k3acquqi6v30nlm712e7l6'
+    '_csrf' => '72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719008333
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58985'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/login'
+    'PHP_SELF' => '/index.php/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'sidebar-collapse=true; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=bog9k3acquqi6v30nlm712e7l6; _csrf=72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719006533.1423
+    'REQUEST_TIME' => 1719006533
+]
+2024-06-21 23:50:10 [::1][100][bog9k3acquqi6v30nlm712e7l6][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\filters\AccessControl.php:158
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\filters\AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Component.php(641): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Controller.php(215): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#9 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#11 {main}
+2024-06-21 23:50:10 [::1][100][bog9k3acquqi6v30nlm712e7l6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'sidebar-collapse' => 'true'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'bog9k3acquqi6v30nlm712e7l6'
+    '_csrf' => '72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719008410
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58998'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/login'
+    'PHP_SELF' => '/index.php/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'sidebar-collapse=true; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=bog9k3acquqi6v30nlm712e7l6; _csrf=72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719006610.086
+    'REQUEST_TIME' => 1719006610
+]
+2024-06-21 23:51:45 [::1][100][bog9k3acquqi6v30nlm712e7l6][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\projetoCezar\views\site\main.php in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php:234
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('main', Array, Object(app\controllers\SiteController))
+#2 C:\xampp\htdocs\projetoCezar\controllers\SiteController.php(73): yii\base\Controller->render('main')
+#3 [internal function]: app\controllers\SiteController->actionMain()
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('main', Array)
+#7 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/main', Array)
+#8 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#10 {main}
+2024-06-21 23:51:45 [::1][100][bog9k3acquqi6v30nlm712e7l6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'sidebar-collapse' => 'true'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'bog9k3acquqi6v30nlm712e7l6'
+    '_csrf' => '72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719008505
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59011'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/site/main'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/site/main'
+    'PHP_SELF' => '/index.php/site/main'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'sidebar-collapse=true; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=bog9k3acquqi6v30nlm712e7l6; _csrf=72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719006705.851
+    'REQUEST_TIME' => 1719006705
+]
+2024-06-21 23:52:47 [::1][100][bog9k3acquqi6v30nlm712e7l6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "index". in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('index', Array)
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#2 {main}
+2024-06-21 23:52:47 [::1][100][bog9k3acquqi6v30nlm712e7l6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'sidebar-collapse' => 'true'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'bog9k3acquqi6v30nlm712e7l6'
+    '_csrf' => '72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719008567
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59054'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/index'
+    'PHP_SELF' => '/index.php/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'sidebar-collapse=true; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=bog9k3acquqi6v30nlm712e7l6; _csrf=72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719006767.478
+    'REQUEST_TIME' => 1719006767
+]
+2024-06-21 23:55:04 [::1][100][bog9k3acquqi6v30nlm712e7l6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "index". in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('index', Array)
+#1 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#2 {main}
+2024-06-21 23:55:04 [::1][100][bog9k3acquqi6v30nlm712e7l6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'sidebar-collapse' => 'true'
+    '_identity' => '3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'bog9k3acquqi6v30nlm712e7l6'
+    '_csrf' => '72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+    '__expire' => 1719008704
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59168'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/index'
+    'PHP_SELF' => '/index.php/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'sidebar-collapse=true; _identity=3dc9182523519c31a70339ea80f433918557f20cdddad072bd37580d794c5fe8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=bog9k3acquqi6v30nlm712e7l6; _csrf=72f18af537c22a7c6d2308a2d6f6321ad7c4cb96fcd83aaa864322f3a0c50b19a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tyzV3a-rYvXDXAAgnES8iScRG7fUFOCE%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719006904.671
+    'REQUEST_TIME' => 1719006904
+]
+2024-06-22 00:32:56 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $model in C:\xampp\htdocs\projetoCezar\controllers\SiteController.php:91
+Stack trace:
+#0 C:\xampp\htdocs\projetoCezar\controllers\SiteController.php(91): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 91)
+#1 [internal function]: app\controllers\SiteController->actionLogin()
+#2 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#5 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#6 C:\xampp\htdocs\projetoCezar\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\projetoCezar\web\index.php(13): yii\base\Application->run()
+#8 {main}
+2024-06-22 00:32:56 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '73f3dac22a38d58305c4167c98f34a05bbb3c08686bd3c11d85822be550e5694a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lG0TILHNy0F2RH-xlaD1SoGKHmKhX2aU\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\projetoCezar\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '60766'
+    'SERVER_SOFTWARE' => 'PHP 8.0.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\projetoCezar\\web\\index.php'
+    'PATH_INFO' => '/login'
+    'PHP_SELF' => '/index.php/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=73f3dac22a38d58305c4167c98f34a05bbb3c08686bd3c11d85822be550e5694a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lG0TILHNy0F2RH-xlaD1SoGKHmKhX2aU%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1719009176.5735
+    'REQUEST_TIME' => 1719009176
+]
